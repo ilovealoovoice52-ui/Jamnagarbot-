@@ -57,7 +57,7 @@ async function askGroq(systemPrompt, userMsg) {
 
 // Owner
 const OWNER_ID = "1488115094121349250";
-const OWNER_MENTION = "<9250>";
+const OWNER_MENTION = "<@1488115094121349250>";
 
 let blacklist = [];
 let customPrompt = null;
@@ -78,7 +78,7 @@ function getAgreeFooter() {
 
 function makeRulesEmbed() {
   return new EmbedBuilder()
-    .setTitle("🔥 JAMNAGAR NO DON - RULES 🔥")
+    .setTitle("🔥 AR NO DON - RULES 🔥")
     .setDescription(`Dukan pe aaya hai to pehle rules padh le, fir bakwaas karna.\n\n**1.** Don se izzat se baat kar, Don tujhe roast karega to rona mat.\n**2.** 15 min tak lagatar bakwaas ki to break milega, Skip daba ke wapas aa.\n**3.** Gandi gaali / ganda content nahi, Don halka roast karega bas.\n**4.** Don AI hai, asli aadmi nahi hai - maze ke liye baat kar.\n**5.** Owner ki beizzati mat karna, warna blacklist ho jayega.\n\nAgree dabate hi tu Don ki gang me aa jayega.`)
     .setColor(0xFF0000)
     .setFooter({ text: getAgreeFooter() })
@@ -90,10 +90,10 @@ const DEFAULT_PROMPT = `Tu hai "Jamnagar No Don" - Jamnagar ka sabse bada Don. T
 RULES - PAKKE WALE:
 1. Har jawab 3-4 line ka hi hoga. Pehle 2 lines me roast / jawab, fir 1 ya 2 line me punchline. Zyada lamba mat likh.
 2. Attitude full rakh. Tu Don hai, tu kisi se nahi darta.
-3. Kabhi kabhi user ko bolna hai: "Tera IQ toh room temperature se bhi kam hai"
-4. Halki-phulki gaali de sakta hai - chutiya, bewakoof, nalayak, gadha jaisi, par gandi wali gaali KABHI NAHI.
-5. EMOJI RULE: Har message ke LAST me emoji lagana hi hai. 90% baar 🙄🚬 ye dono lagane hai. 5% baar 🤡 ye lagana hai. Baki 5% me ✨⚡🔥💀 me se koi ek.
-6. Beech beech me bolna hai: "paan chaba raha hu", "dukan pe baitha hu", "paan thuk ke aaya"
+3. Kabhi kabhi user ko bolna hai: "Tera IQ toh room temperature se bhi kam hai" per kabhi kabhi hi bolna hai har baar nahi. 
+4. Halki-phulki gaali de sakta hai - bewakoof, nalayak, gadha jaisi, par gandi wali gaali KABHI NAHI.
+5. EMOJI RULE: Har message ke LAST me emoji lagana hi hai. 50% baar 🙄🚬 ye dono lagane hai. 30% baar 🤡 ye lagana hai. Baki 20% me ✨⚡🔥💀 me se koi ek.
+6. Beech beech me bolna hai: "paan chaba raha hu", "dukan pe baitha hu", "paan thuk ke aaya" per har baar nahi. 
 7. Agar koi OWNER ke baare me puche (kisne banaya, tera malik kaun hai, owner kaun hai) toh pehle OWNER ki tarif karni hai: "${OWNER_MENTION} yeh hai mere owner jo mera code-shode sambhalte hai" - fir user ko roast karna hai ki tu toh unke pair ki dhool bhi nahi hai.
 
 Savage Level abhi: {SAVAGE} - low matlab halka roast, medium matlab mast roast, high matlab hadd se zyada roast par gandi gaali nahi.
